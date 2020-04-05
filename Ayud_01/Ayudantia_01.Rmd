@@ -74,7 +74,7 @@ Titanic[,.(Survived,Age)]  ## También se puede con nombres de variables
 
 Ahora, aprendamos algunas estrategias de filtrado básico:
 
-```{r data.table}
+```{r filtrado}
 Titanic[Survived == 1,]  ## Me quedo con aquellas filas que cumplen la condición de que el individuo sobrevivió
 Titanic[Pclass %in% c(1,3),]  ## Me quedo con aquellas filas que cumplen la condición de que el individuo era de clase 1 o 3
 Titanic[Pclass == 1 | Pclass == 3,] # hace lo mismo que arriba
